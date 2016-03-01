@@ -9,6 +9,11 @@ def initialize(params)
   @location = params[:location]
 end
 
+def welcome_script
+  script = "Welcome to my website"
+  return script
+end
+
 
 
 

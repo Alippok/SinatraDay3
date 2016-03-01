@@ -18,6 +18,10 @@ class TestBio < MiniTest::Test
     assert_equal("0131558030", @bio1.phone)
   end
 
+  def test_if_bio_prints_script
+  assert_equal("Welcome to my website", @bio1.welcome_script)
+  end
+  
 
 
 end
