@@ -14,6 +14,10 @@ class TestBio < MiniTest::Test
     assert_equal("Alasdair Lippok", @bio1.name)
   end
 
+  def test_if_bio_displays_phone_number
+    assert_equal("0131558030", @bio1.phone)
+  end
+
 
 
 end
