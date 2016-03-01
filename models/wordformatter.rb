@@ -17,9 +17,7 @@ def camelcase(string)
   return final_string
 end
 
-def camelcase_two(params)
-  word1 = params[:word1]
-  word2 = params[:word2]
+def camelcase_two(word1, word2)
   string = "#{word1.capitalize}#{word2.capitalize}"
   return string
 end

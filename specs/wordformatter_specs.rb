@@ -32,7 +32,7 @@ class TestWordFormatter < MiniTest::Test
   end
   
   def test_if_wordformatter_camelcases_two_arguments
-    result = @wordformatter1.camelcase_two(word1: "camel", word2: "case")
+    result = @wordformatter1.camelcase_two("camel", "case")
     assert_equal("CamelCase", result)
   end
 

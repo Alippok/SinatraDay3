@@ -30,3 +30,10 @@ get '/address' do
   return result.to_json
   
 end
+
+get '/:word1/:word2' do
+  wordformatter = Wordformatter.new
+ 
+ @string = wordformatter.camelcase_two(params[:word1], params[:word2])
+ erb(:camel_case)#Stuck on using multiple erb pages and yields
+end
