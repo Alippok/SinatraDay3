@@ -25,4 +25,14 @@ class TestWordFormatter < MiniTest::Test
     result = @wordformatter1.camelcase("master plan")
     assert_equal("MasterPlan", result)
   end
+  
+  def test_if_wordformatter_camelcases_strings_containing_more_than_two_words
+    result = @wordformatter1.camelcase("code clan code base")
+    assert_equal("CodeClanCodeBase", result)
+
+  end
+
+
+
+
 end
