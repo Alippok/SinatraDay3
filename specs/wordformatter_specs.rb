@@ -20,4 +20,9 @@ class TestWordFormatter < MiniTest::Test
     result = @wordformatter1.upcase("eh23 5gh")
     assert_equal("EH23 5GH", result)
   end
+
+  def test_if_wordformatter_camelcases_two_word_strings
+    result = @wordformatter1.camelcase("master plan")
+    assert_equal("MasterPlan", result)
+  end
 end
