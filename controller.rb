@@ -37,3 +37,11 @@ get '/:word1/:word2' do
  @string = wordformatter.camelcase_two(params[:word1], params[:word2])
  erb(:camel_case)#Stuck on using multiple erb pages and yields
 end
+
+
+
+get '/:words' do
+  wordformatter = Wordformatter.new
+  @string = wordformatter.camelcase(params[:words])
+  erb(:test)
+end
